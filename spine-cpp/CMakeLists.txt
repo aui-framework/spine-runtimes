@@ -12,11 +12,6 @@ file(GLOB INCLUDES "spine-cpp/include/**/*.h")
 file(GLOB SOURCES "spine-cpp/src/**/*.cpp")
 
 add_library(spine-cpp STATIC ${SOURCES} ${INCLUDES})
-<<<<<<< HEAD
-target_include_directories(spine-cpp PUBLIC spine-cpp/include)
-install(TARGETS spine-cpp DESTINATION dist/lib)
-install(FILES ${INCLUDES} DESTINATION dist/include)
-=======
 target_include_directories(spine-cpp
   PRIVATE spine-cpp/include
   INTERFACE $<INSTALL_INTERFACE:include>
@@ -42,4 +37,4 @@ install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/spine-config.cmake
   DESTINATION "."
   )
->>>>>>> e0755c485 (fix cmake install)
+
