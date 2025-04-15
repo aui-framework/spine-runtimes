@@ -1,5 +1,5 @@
 option(SPINE_SANITIZE "Build with sanitization" OFF)
-option(SPINE_SET_COMPILER_FLAGS "Set compiler flags" ON)
+option(SPINE_SET_COMPILER_FLAGS "Set compiler flags" OFF)
 
 if (NOT SPINE_SET_COMPILER_FLAGS)
     return()
