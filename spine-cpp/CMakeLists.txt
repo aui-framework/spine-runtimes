@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(spine-cpp)
 include_directories(include)
 file(GLOB INCLUDES "spine-cpp/include/**/*.h")
 file(GLOB SOURCES "spine-cpp/src/**/*.cpp")
